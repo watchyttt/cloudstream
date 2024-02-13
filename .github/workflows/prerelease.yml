@@ -28,7 +28,7 @@ jobs:
    
     - name: Run Gradle
       run: |
-        ./gradlew assemblePrerelease build androidSourcesJar
+        ./gradlew assembleRelease 
         ./gradlew makeJar # for classes.jar, has to be done after assemblePrerelease
      
     - name: Create pre-release
